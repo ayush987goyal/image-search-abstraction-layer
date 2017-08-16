@@ -1,0 +1,52 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+
+<!-- You might want to try something fancier: -->
+<!-- html/nunjucks docs: https://mozilla.github.io/nunjucks/ -->
+<!-- pug: https://pugjs.org/ -->
+<!-- haml: http://haml.info/ -->
+<!-- hbs(handlebars): http://handlebarsjs.com/ -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Image Search Abstraction Layer</title>
+    <meta name="description" content="A cool thing made with Glitch">
+    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <header>
+      <h1>
+        Image Search Abstraction Layer
+      </h1>
+    </header>
+    <main>
+      <h2>Example Search Usage</h2>
+      Search for "cube" with offset of "3" <br><br>
+       <div style="color: red">
+       https://image-search-abstraction-layer-ag.glitch.me/imagesearch/cube?offset=3
+        </div>
+      <h2>Example Result</h2>
+       <div style="color: green">
+         {<br>
+"url": "http://etc.usf.edu/clipart/42700/42772/cube-1_42772_lg.gif",<br>
+"snippet": "Cube | ClipArt ETC",<br>
+"thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjBZrdibjyPbaY4fX-raePDyB1f9K-JBNoq4uGaFywFrKNgqawM_RlH5sf",<br>
+"context": "http://etc.usf.edu/clipart/42700/42772/cube-1_42772.htm"<br>
+}
+      </div>
+      <h2> Get recent search history </h2>
+      <div style="color: red">
+        https://image-search-abstraction-layer-ag.glitch.me/latest/imagesearch/
+      </div>
+    </main>
+
+    <footer>
+    </footer>
+
+  </body>
+</html>
